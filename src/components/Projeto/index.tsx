@@ -57,7 +57,7 @@ tecnologias,
 
       <div className={styles.projeto__info}>
         <div className={styles.projeto__cabecalho}>
-          <h2 className={ptSerif.className}>Jogo do Genius</h2>
+          <h2 className={ptSerif.className}>{nomeProjeto}</h2>
           <span className={inter.className} title={nomeStatus}>
             status
             <Image 

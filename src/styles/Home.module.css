@@ -10,7 +10,7 @@
   justify-content: space-between;
   padding: 0 20px;
   background: linear-gradient(to left, #d8d8d880, #2a1e2e4c, #d8d8d8);
-  /* border-bottom: 1px solid #2A1E2E; */
+  z-index: 999;
 }
 
 .header__logo {
@@ -137,14 +137,33 @@
 
 @media (max-width: 900px) {
   .sobreMim {
-    padding: 0 20px;
     flex-direction: column-reverse;
-    justify-content: center;
-    gap: 50px;
+    gap: 30px;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .perfil__img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .perfil__habilidades img {
+    width: 16px;
+    height: 16px;
   }
 
   .sobreMim__content {
-    text-align: center;
     width: 100%;
+    padding: 0 20px;
+  }
+
+  .sobreMim__redesSociais {
+    justify-content: center;
+  }
+
+  .sobreMim__redesSociais img {
+    width: 32px;
   }
 }

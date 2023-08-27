@@ -1,0 +1,42 @@
+[
+  {
+    "name": "html",
+    "alt": "HTML",
+    "src": "/tecnologias/html.png"
+  },
+  {
+    "name": "css",
+    "alt": "CSS",
+    "src": "/tecnologias/css.png"
+  },
+  {
+    "name": "javascript",
+    "alt": "javascript",
+    "src": "/tecnologias/javascript.png"
+  },
+  {
+    "name": "react",
+    "alt": "react",
+    "src": "/tecnologias/react.png"
+  },
+  {
+    "name": "vue",
+    "alt": "vue",
+    "src": "/tecnologias/vue.png"
+  },
+  {
+    "name": "sass",
+    "alt": "sass",
+    "src": "/tecnologias/sass.png"
+  },
+  {
+    "name": "python",
+    "alt": "python",
+    "src": "/tecnologias/python.png"
+  },
+  {
+    "name": "git",
+    "alt": "git",
+    "src": "/tecnologias/git.png"
+  }
+]

@@ -4,7 +4,8 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Projeto from '@/components/Projeto';
 
-import projetosApi from '@/pages/api/projetos.json'
+import projetosApi from '@/pages/api/projetos.json';
+import tecnologiaApi from '@/pages/api/tecnologias.json';
 
 import { Inter, PT_Serif, Arvo } from 'next/font/google';
 
@@ -101,74 +102,22 @@ export default function Home() {
             <Image
               src="/perfil.jpg" 
               alt="Foto de Perfil" 
+              className={styles.perfil__img}
               width={380}
               height={380}
               priority
             />
             <div className={styles.perfil__habilidades}>
-              <Image 
-                src="/tecnologias/html.png" 
-                alt="html" 
+            {tecnologiaApi.map((tech) => (
+              <Image
+                key={tech.name}
+                src={tech.src}
+                alt={tech.alt}
                 width={30}
                 height={30}
                 loading='lazy'
               />
-
-              <Image 
-                src="/tecnologias/css.png" 
-                alt="css" 
-                width={30}
-                height={30}
-                loading='lazy'
-              />
-
-              <Image 
-                src="/tecnologias/javascript.png" 
-                alt="javascript" 
-                width={30}
-                height={30}
-                loading='lazy'
-              />
-
-              <Image 
-                src="/tecnologias/react.png" 
-                alt="react" 
-                width={30}
-                height={30}
-                loading='lazy'
-              />
-
-              <Image 
-                src="/tecnologias/vue.png" 
-                alt="vue" 
-                width={30}
-                height={30}
-                loading='lazy'
-              />
-
-              <Image 
-                src="/tecnologias/sass.png" 
-                alt="sass" 
-                width={30}
-                height={30}
-                loading='lazy'
-              />
-
-              <Image 
-                src="/tecnologias/python.png" 
-                alt="python" 
-                width={30}
-                height={30}
-                loading='lazy'
-              />
-
-              <Image 
-                src="/tecnologias/git.png" 
-                alt="git" 
-                width={30}
-                height={30}
-                loading='lazy'
-              />
+            ))}
             </div>
           </div>
         </section>
