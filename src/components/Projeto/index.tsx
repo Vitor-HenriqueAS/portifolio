@@ -75,7 +75,7 @@ tecnologias,
         </div>
 
         <div className={styles.projeto__links}>
-          <a href={site} className={arvo.className}>
+          <a href={site} className={arvo.className} target='_blank'>
             <Image 
               src={'/projeto-status/web.png'}
               alt='Visualizar site Genius'
@@ -85,7 +85,7 @@ tecnologias,
             />
             Visualizar Site
           </a>
-          <a href={repo} className={arvo.className}>
+          <a href={repo} className={arvo.className} target='_blank'>
             <Image 
               src={'/projeto-status/code.png'}
               alt='Repositorio Genius'
