@@ -1,0 +1,29 @@
+[
+  {
+    "nome": "my tft",
+    "status": [{"nome": "Em Andamento", "imagem": "/projeto-status/andamento.png"}],
+    "imagem": "/projetos/mytft.png",
+    "tecnologias": [
+      {"nome": "HTML", "imagem": "/tecnologias/html.png"},
+      {"nome": "CSS", "imagem": "/tecnologias/css.png"},
+      {"nome": "JAVASCRIPT", "imagem": "/tecnologias/javascript.png"},
+      {"nome": "VUE", "imagem": "/tecnologias/vue.png"}
+    ],
+    "descricao": "Desvende o jogo Teamfight Tactics da Riot Games com nosso guia, aprimorando sua estratégia vencedora. O projeto foi criado para explorar o framework Vue e suas funcionalidades.",
+    "site": "https://mytft.vercel.app/",
+    "repo": "https://github.com/Artur-Neri/TFT"
+  },
+  {
+    "nome": "jogo do genius",
+    "status": [{"nome": "Concluído", "imagem": "/projeto-status/finalizado.png"}],
+    "imagem": "/projetos/genius.png",
+    "tecnologias": [
+      {"nome": "HTML", "imagem": "/tecnologias/html.png"},
+      {"nome": "CSS", "imagem": "/tecnologias/css.png"},
+      {"nome": "JAVASCRIPT", "imagem": "/tecnologias/javascript.png"}
+    ],
+    "descricao": "Testando a sua memória de uma forma divertida e com pontuações. Projeto desenvolvido com o propósito de aprendizagem na lógica de programação com tecnologias vanilla.",
+    "site": "https://vitor-henriqueas.github.io/jogo-genius/",
+    "repo": "https://github.com/Vitor-HenriqueAS/jogo-genius"
+  }
+]
