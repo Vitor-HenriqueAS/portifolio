@@ -43,7 +43,7 @@ tecnologias,
           <Image 
             key={index}
             src={item.imagem}
-            alt={item.nome}
+            alt={nomeProjeto +" feito com "+ item.nome}
             title={item.nome}
             width={35}
             height={35}
@@ -62,7 +62,7 @@ tecnologias,
             status
             <Image 
               src={imagemStatus}
-              alt={nomeProjeto + nomeStatus}
+              alt={nomeProjeto +" - "+ nomeStatus}
               width={16}
               height={16}
               loading='lazy'
@@ -78,7 +78,7 @@ tecnologias,
           <a href={site} className={arvo.className} target='_blank'>
             <Image 
               src={'/projeto-status/web.png'}
-              alt='Visualizar site Genius'
+              alt={"Visualizar site" + " - " + nomeProjeto}
               width={16}
               height={16}
               loading='lazy'
@@ -88,7 +88,7 @@ tecnologias,
           <a href={repo} className={arvo.className} target='_blank'>
             <Image 
               src={'/projeto-status/code.png'}
-              alt='Repositorio Genius'
+              alt={"Repositorio" + " - " + nomeProjeto}
               width={16}
               height={16}
               loading='lazy'

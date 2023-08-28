@@ -34,7 +34,7 @@ export default function Home() {
             priority
           />
 
-          <div>
+          <div className={styles.header__logo__txt}>
             <p className={ptSerif.className}>VITOR HENRIQUE</p>
             <p className={arvo.className}>desenvolvedor web</p>
           </div>
@@ -63,7 +63,7 @@ export default function Home() {
           <div className={styles.sobreMim__content}>
             <span>Olá, eu sou</span>
             <h1 className={ptSerif.className}>Vitor Henrique</h1>
-            <h3 className={inter.className}>Desenvolvedor Front End</h3>
+            <h2 className={inter.className}>Desenvolvedor Front End</h2>
             <p className={inter.className}>
               Apaixonado por tecnologia que decidiu trilhar o caminho da programação. 
               Em busca de constante evolução.

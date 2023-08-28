@@ -73,7 +73,7 @@
 
 .sobreMim__content span {
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sobreMim__content h1 {
@@ -81,7 +81,7 @@
   letter-spacing: 4px;
 }
 
-.sobreMim__content h3 {
+.sobreMim__content h2 {
   background: -webkit-linear-gradient(#C93A32, #2A1E2E);
   background-clip: text;
   -webkit-background-clip: text;
@@ -165,5 +165,11 @@
 
   .sobreMim__redesSociais img {
     width: 32px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__logo__txt {
+    display: none;
   }
 }
