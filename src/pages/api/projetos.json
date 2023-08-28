@@ -2,7 +2,7 @@
   {
     "nome": "my tft",
     "status": [{"nome": "Em Andamento", "imagem": "/projeto-status/andamento.png"}],
-    "imagem": "/projetos/mytft.png",
+    "imagem": "/projetos/mytft.webp",
     "tecnologias": [
       {"nome": "HTML", "imagem": "/tecnologias/html.png"},
       {"nome": "CSS", "imagem": "/tecnologias/css.png"},
@@ -16,7 +16,7 @@
   {
     "nome": "jogo do genius",
     "status": [{"nome": "Concluído", "imagem": "/projeto-status/finalizado.png"}],
-    "imagem": "/projetos/genius.png",
+    "imagem": "/projetos/genius.webp",
     "tecnologias": [
       {"nome": "HTML", "imagem": "/tecnologias/html.png"},
       {"nome": "CSS", "imagem": "/tecnologias/css.png"},

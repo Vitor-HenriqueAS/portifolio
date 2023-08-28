@@ -20,7 +20,7 @@ export default function Home() {
         <title>Portifólio | Vitor Henrique</title>
         <meta name="description" content="Explore meu portfólio exibindo uma coleção diversificada de projetos criativos. De desenvolvimento web a design, descubra meu trabalho em front-end, back-end, design de interface do usuário e muito mais." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header className={styles.header}>
@@ -73,7 +73,7 @@ export default function Home() {
             </p>
 
             <div className={styles.sobreMim__redesSociais}>
-              <a href="" target='_blank'>
+              <a href="https://github.com/Vitor-HenriqueAS" target='_blank'>
               <Image 
                 src="/redes-sociais/github.svg" 
                 alt="Logo do Github" 
@@ -84,7 +84,7 @@ export default function Home() {
                 priority
               />
               </a>
-              <a href="" target='_blank'>
+              <a href="https://www.linkedin.com/in/vitor-henriqueas/" target='_blank'>
               <Image 
                 src="/redes-sociais/linkedin.svg" 
                 alt="Logo do Linkedin" 
@@ -100,7 +100,7 @@ export default function Home() {
 
           <div className={styles.perfil}>
             <Image
-              src="/perfil.jpg" 
+              src="/perfil.webp" 
               alt="Foto de Perfil" 
               className={styles.perfil__img}
               width={380}
