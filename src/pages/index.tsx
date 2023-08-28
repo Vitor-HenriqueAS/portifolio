@@ -1,3 +1,4 @@
+import React, { useEffect} from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -14,6 +15,29 @@ const ptSerif = PT_Serif({weight: "700", subsets: ['latin']});
 const arvo = Arvo({weight: "400", subsets: ['latin'] });
 
 export default function Home() {
+
+  useEffect(() => {
+    const links = document.querySelectorAll('nav a');
+
+    links.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+
+        if (targetId) {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 12 * window.innerHeight / 100;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth',
+            });
+          }
+        }
+      });
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -48,18 +72,18 @@ export default function Home() {
             <div className={styles.header__bar}></div>
           </label>
 
-          {/* <nav className={styles.header__nav}>
+          <nav className={styles.header__nav}>
             <ul>
-              <li>Inicio</li>
-              <li>Sobre Mim</li>
-              <li>Projetos</li>
+              <li><a className={arvo.className} href="#sobreMim">Sobre Mim</a></li>
+              <li><a className={arvo.className} href="#projetos">Projetos</a></li>
+              <li><a className={arvo.className} href="#contato">Contato</a></li>
             </ul>
-          </nav> */}
+          </nav>
         </div>
       </header>
 
       <main>
-        <section className={styles.sobreMim}>
+        <section className={styles.sobreMim} id='sobreMim'>
           <div className={styles.sobreMim__content}>
             <span>Olá, eu sou</span>
             <h1 className={ptSerif.className}>Vitor Henrique</h1>
@@ -122,7 +146,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.projetos}>
+        <section className={styles.projetos} id='projetos'>
           <h2 className={`${styles.projeto__cabecalho} ${ptSerif.className}`}> &#60; PROJETOS /&#62;</h2>
         
           <div className={styles.projetos__content}>
