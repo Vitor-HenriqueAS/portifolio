@@ -82,7 +82,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className={styles.main}>
         <section className={styles.sobreMim} id='sobreMim'>
           <div className={styles.sobreMim__content}>
             <span>Olá, eu sou</span>
@@ -165,15 +165,97 @@ export default function Home() {
             ))}
           </div>
         </section>
-        
-      </main>
+      
+        <section className={styles.contato}  id='contato'>
+          <Image 
+            src={"/mapa-america-sul.jpg"}
+            alt='Mapa da América do Sul'
+            width={1280}
+            height={500}
+            className={styles.contato__cabecalho__bg}
+            loading='lazy'
+          />
 
-      {/*
-        <section>
-          Projetos
+          <h2 className={`${styles.contato__cabecalho__title} ${arvo.className}`}>
+            let&apos;s work together
+          </h2>
+          
+          <div className={styles.contato__content}>
+            <div className={`${inter.className} ${styles.contato__form}`}>
+
+              <h2 className={styles.contato__form__title}>Contato</h2>
+
+              <div className={styles.contato__formBox}>
+                <label htmlFor='contatoNome'>Nome</label>
+                <input type="text" id="contatoNome" className={styles.contato__formInput} autoComplete="off" required />
+              </div>
+
+              <div className={styles.contato__formBox}>
+                <label htmlFor='contatoEmail'>Email</label>
+                <input type="text" id="contatoEmail" className={styles.contato__formInput} autoComplete="off" required />
+              </div>
+
+              <div className={styles.contato__formBox}>
+              <label htmlFor='contatoAssunto'>Em que você está interessado</label>
+              <select id="contatoAssunto" className={styles.contato__formSelect}>
+                <option value="none"> </option>
+                <option value="assunto1">Só queria dizer oi !</option>
+                <option value="assunto2">Precisa de ajuda com um projeto único</option>
+                <option value="assunto3">Procurando parceria de longo prazo</option>
+                <option value="assunto4">Quer me contratar</option>
+              </select>
+              </div>
+
+              <div className={styles.contato__formBox}>
+                <label htmlFor='contatoMensagem'>Mensagem</label>
+                <input type="text" id="contatoMensagem" className={styles.contato__formInput} autoComplete="off" required />
+              </div>
+
+              <button className={`${arvo.className} ${styles.contato__btnEnviar}`} type='button'>Enviar mensagem</button>
+            </div>
+
+            <div className={`${arvo.className} ${styles.contato__info}`}>
+              <h3 >E-mail para contato</h3>
+              <span>vitor.henriqueas.contato@gmail.com</span>
+
+              <h3>Adicione nas redes</h3>
+              <a href='https://github.com/Vitor-HenriqueAS' className={styles.contato__redes} target='_blank'>
+                <Image 
+                  src="/redes-sociais/github.svg" 
+                  alt="Logo do Github | Contato" 
+                  width={30}
+                  height={30}
+                  className={styles.redesSociais__icon}
+                  title='Github'
+                  loading='lazy'
+                />
+                /vitor-henriqueas
+              </a>
+
+              <a href='https://www.linkedin.com/in/vitor-henriqueas/' className={styles.contato__redes} target='_blank'>
+                <Image 
+                  src="/redes-sociais/linkedin.svg" 
+                  alt="Logo do Linkedin | Contato" 
+                  width={30}
+                  height={30}
+                  className={styles.redesSociais__icon}
+                  title='Linkedin'
+                  loading='lazy'
+                />
+                /vitor-henriqueas
+              </a>
+            </div>
+          </div>
+
         </section>
+
+        <footer className={styles.rodape}>
+          &copy; 2023 - Vitor Henrique
+        </footer>
+
       </main>
 
+        {/*
       <footer>
         <hr />
         Direitos

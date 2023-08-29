@@ -1,3 +1,7 @@
+.main {
+  position: relative;
+}
+
 /* ==== CABEÇALHO ==== */
 
 .header {
@@ -117,7 +121,8 @@
   bottom: -65px;
   right: 0px;
 }
-/* SOBRE MIM */
+
+/* ==== SOBRE MIM ==== */
 
 .sobreMim {
   height: 88vh;
@@ -152,6 +157,7 @@
 .sobreMim__content p {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.8);
+  background-color: #ffffffd2;
   margin-top: 20px;
 }
 
@@ -176,6 +182,7 @@
   padding: 20px 50px;
   background-color: #f0f0f08c;
   box-shadow: 0 0 10px 10px #e2e1e18c;
+  margin-bottom: 100px;
 }
 
 .projeto__cabecalho {
@@ -192,7 +199,141 @@
   gap: 20px;
 }
 
+/* ==== CONTATO ==== */
+
+.contato {
+  position: relative;
+}
+
+.contato__cabecalho__bg {
+  width: 95%;
+  object-fit: cover;
+  filter: saturate(50%);
+  margin-bottom: 50px;
+}
+
+.contato__cabecalho__title {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  background: linear-gradient(to right,#ffffffa1, #fff);
+  border: 1px solid #989898;
+  padding: 5px 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 700;
+  text-shadow: 0px 0px 5px #c93a328d;
+  color: #000;
+  z-index: 2;
+}
+
+.contato__content {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 80vw;
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(to bottom,#ffffffa1, #fff);
+  border: 1px solid #989898;
+  padding: 40px 20px;
+  width: 400px;
+  height: 480px;
+  z-index: 1;
+}
+
+.contato__form__title {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.contato__formBox label{
+  color: rgba(0, 0, 0, 0.9);
+  font-size: .8rem;
+}
+
+.contato__formInput {
+  width: 100%;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #161616;
+}
+
+.contato__formSelect {
+  width: 100%;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #161616;
+}
+
+.contato__btnEnviar {
+  margin-top: 30px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  transition: border .1s ease-in-out;
+  cursor: pointer;
+}
+
+.contato__btnEnviar:hover {
+  color: #0b0756;
+  font-weight: 700;
+  border-bottom: 2px solid #0b0756;
+}
+
+.contato__info {
+  background: linear-gradient(to bottom,#ffffffa1, #fff);
+  border: 1px solid #989898;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 30px;
+}
+
+.contato__redes{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.contato__redes:hover{
+  text-decoration: underline;
+}
+
+/* ==== RODAPE ==== */
+
+.rodape {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  padding: 10px 20px;
+  background-color: #ffffffa1;
+  z-index: -1;
+}
+
 /* ==== Responsivo ==== */
+
+@media (max-width: 940px) {
+  .projetos__content {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 900px) {
   .sobreMim {
@@ -224,6 +365,23 @@
 
   .sobreMim__redesSociais img {
     width: 32px;
+  }
+
+  .contato__content {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+
+  .contato__form, .contato__info {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contato__content {
+    top: 30%;
   }
 }
 
