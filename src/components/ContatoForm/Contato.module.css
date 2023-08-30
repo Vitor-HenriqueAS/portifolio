@@ -1,0 +1,54 @@
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(to bottom,#ffffffa1, #fff);
+  border: 1px solid #989898;
+  padding: 40px 20px;
+  width: 400px;
+  height: 480px;
+  z-index: 1;
+}
+
+.contato__form__title {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.contato__formBox label{
+  color: rgba(0, 0, 0, 0.9);
+  font-size: .8rem;
+}
+
+.contato__formInput {
+  width: 100%;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #161616;
+}
+
+.contato__formSelect {
+  width: 100%;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #161616;
+}
+
+.contato__btnEnviar {
+  margin-top: 30px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  transition: border .1s ease-in-out;
+  cursor: pointer;
+}
+
+.contato__btnEnviar:hover {
+  color: #0b0756;
+  font-weight: 700;
+  border-bottom: 2px solid #0b0756;
+}

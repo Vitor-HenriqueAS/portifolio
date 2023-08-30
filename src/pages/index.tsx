@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import styles from '@/styles/Home.module.css';
 import Projeto from '@/components/Projeto';
+import FormContato from '@/components/ContatoForm';
 
 import projetosApi from '@/pages/api/projetos.json';
 import tecnologiaApi from '@/pages/api/tecnologias.json';
@@ -179,40 +180,9 @@ export default function Home() {
           <h2 className={`${styles.contato__cabecalho__title} ${arvo.className}`}>
             let&apos;s work together
           </h2>
-          
-          <div className={styles.contato__content}>
-            <div className={`${inter.className} ${styles.contato__form}`}>
 
-              <h2 className={styles.contato__form__title}>Contato</h2>
-
-              <div className={styles.contato__formBox}>
-                <label htmlFor='contatoNome'>Nome</label>
-                <input type="text" id="contatoNome" className={styles.contato__formInput} autoComplete="off" required />
-              </div>
-
-              <div className={styles.contato__formBox}>
-                <label htmlFor='contatoEmail'>Email</label>
-                <input type="text" id="contatoEmail" className={styles.contato__formInput} autoComplete="off" required />
-              </div>
-
-              <div className={styles.contato__formBox}>
-              <label htmlFor='contatoAssunto'>Em que você está interessado</label>
-              <select id="contatoAssunto" className={styles.contato__formSelect}>
-                <option value="none"> </option>
-                <option value="assunto1">Só queria dizer oi !</option>
-                <option value="assunto2">Precisa de ajuda com um projeto único</option>
-                <option value="assunto3">Procurando parceria de longo prazo</option>
-                <option value="assunto4">Quer me contratar</option>
-              </select>
-              </div>
-
-              <div className={styles.contato__formBox}>
-                <label htmlFor='contatoMensagem'>Mensagem</label>
-                <input type="text" id="contatoMensagem" className={styles.contato__formInput} autoComplete="off" required />
-              </div>
-
-              <button className={`${arvo.className} ${styles.contato__btnEnviar}`} type='button'>Enviar mensagem</button>
-            </div>
+           <div className={styles.contato__content}>
+            <FormContato />
 
             <div className={`${arvo.className} ${styles.contato__info}`}>
               <h3 >E-mail para contato</h3>
@@ -254,18 +224,6 @@ export default function Home() {
         </footer>
 
       </main>
-
-        {/*
-      <footer>
-        <hr />
-        Direitos
-      </footer> */}
-      {/* <main className={`${styles.main} ${inter.className}`}> */}
-      {/* <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      > */}
     </>
   )
 }

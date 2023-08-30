@@ -228,7 +228,7 @@
   z-index: 2;
 }
 
-.contato__content {
+/* .contato__content {
   position: absolute;
   left: 10%;
   top: 15%;
@@ -292,6 +292,17 @@
   color: #0b0756;
   font-weight: 700;
   border-bottom: 2px solid #0b0756;
+} */
+
+.contato__content {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 80vw;
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .contato__info {
