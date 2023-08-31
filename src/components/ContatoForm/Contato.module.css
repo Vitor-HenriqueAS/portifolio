@@ -7,6 +7,7 @@
   padding: 40px 20px;
   width: 400px;
   height: 480px;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -23,10 +24,16 @@
 
 .contato__formInput {
   width: 100%;
+  font-size: .9rem;
   padding: 5px 10px;
   background: transparent;
   border: none;
   border-bottom: 2px solid #161616;
+  outline: none;
+}
+
+textarea.contato__formInput {
+  resize: none;
 }
 
 .contato__formSelect {
@@ -38,8 +45,9 @@
 }
 
 .contato__btnEnviar {
-  margin-top: 30px;
+  margin-top: 3px;
   background: transparent;
+  border-bottom: 2px solid transparent;
   border: none;
   font-size: 1.1rem;
   letter-spacing: 2px;

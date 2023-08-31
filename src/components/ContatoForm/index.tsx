@@ -102,7 +102,7 @@ export default function ContatoForm() {
             id="contatoNome" 
             minLength={3} 
             maxLength={40}  
-            className={styles.contato__formInput} 
+            className={`${styles.contato__formInput} ${inter.className}`}
             value={nome} 
             onChange={(e) => handleNomeChange(e.target.value)} 
             autoComplete="off" 
@@ -116,7 +116,8 @@ export default function ContatoForm() {
           <input 
             type="text" 
             id="contatoEmail" 
-            className={styles.contato__formInput} 
+            maxLength={40}  
+            className={`${styles.contato__formInput} ${inter.className}`} 
             value={email} onChange={(e) => handleEmailChange(e.target.value)}
             autoComplete="off" required 
             style={{ borderColor: isValidEmail ? 'initial' : 'red' }}
@@ -129,9 +130,10 @@ export default function ContatoForm() {
           <textarea 
             id="contatoMensagem" 
             value={mensagem} 
-            className={styles.contato__formInput} 
+            className={`${styles.contato__formInput} ${inter.className}`} 
             onChange={(e) => handleMensagemChange(e.target.value)} 
             autoComplete="off" 
+            rows={5}
             required 
           />
         </div>
