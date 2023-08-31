@@ -5,11 +5,6 @@ import * as EmailValidator from 'email-validator';
 import styles from './Contato.module.css';
 import { Inter, Arvo } from 'next/font/google';
 
-import dotenv from 'dotenv';
-dotenv.config();
-
-console.log(process.env.SERVICO_ID)
-
 const inter = Inter({weight:"400", subsets: ['latin'] });
 const arvo = Arvo({weight: "400", subsets: ['latin'] });
 
