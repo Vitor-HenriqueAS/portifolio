@@ -11,14 +11,6 @@ const nextConfig = {
     SERVICO_ID: process.env.SERVICO_ID,
     TEMPLATE_ID: process.env.TEMPLATE_ID,
     PUBLIC_KEY: process.env.PUBLIC_KEY,
-  },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.node = {
-        fs: 'empty'
-      };
-    }
-    return config;
   }
 }
 
