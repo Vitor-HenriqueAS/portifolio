@@ -1,5 +1,19 @@
 [
   {
+    "nome": "pokédex 2.0",
+    "status": [{"nome": "Em Andamento", "imagem": "/projeto-status/andamento.png"}],
+    "imagem": "/projetos/pokedex.webp",
+    "tecnologias": [
+      {"nome": "HTML", "imagem": "/tecnologias/html.png"},
+      {"nome": "CSS", "imagem": "/tecnologias/css.png"},
+      {"nome": "JAVASCRIPT", "imagem": "/tecnologias/javascript.png"},
+      {"nome": "REACT", "imagem": "/tecnologias/react.png"}
+    ],
+    "descricao": "Uma Pokédex que além de mostrar os pokemons, possui uma interação de perguntas para descobrir qual é o pokemon, e ver se existe um mestre(a) pokemon dentro de você! Projeto sendo desenvolvido para aprimorar minhas habilidades com Next, React, TypeScript.",
+    "site": "https://pokedex-2-vitor-henrique.vercel.app/",
+    "repo": "https://github.com/Vitor-HenriqueAS/Pokedex_2.0"
+  },
+  {
     "nome": "my tft",
     "status": [{"nome": "Em Andamento", "imagem": "/projeto-status/andamento.png"}],
     "imagem": "/projetos/mytft.webp",
